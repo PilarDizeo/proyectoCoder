@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Raleway:ital,wght@1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*----INDEX------*/
+header {
+    background-color: #8D6E51;;
+    width: 100%;
+    position:sticky;
+    top: 0;
+}
+body {
+    line-height: 1.2;
+    text-transform: none;
+    margin: 0 auto;
+    font-weight: 400;
+    background: #8D6E51;
+    -webkit-font-smoothing: antialiased;
+}
+header h1 {
+    text-align: center;
+    color: #e8d8d5;
+}
+header nav ul {
+    text-align: center;
+    list-style: none;
+}
+header nav ul li a {
+    color: #8D6E51;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #e8d8d5;
+    margin: 5px 2px 5px 2px;
+}
+header nav ul li {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+}
+.wrap {
+    width: 99vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: url(../img/BillieHome.webp);
+    background-size: cover;
+    background-position: center;
+}
+.wrapTexto {
+    color: #1f2124;
+    text-align: left;
+    width: 50%;
+    text-decoration: none;
+}
+
+/*----GALERIA------*/
+.tituloGaleria {
+    text-align: left;
+    color: #e8d8d5;
+}
+.galeriaConteiner {
+    display: grid;
+    grid-template-areas:
+        'foto1'
+        'foto2'
+        'foto3'
+        'foto4'
+        'foto5'
+        'foto6';
+    grid-template-columns: repeat(1, auto);
+    align-content: stretch;
+    gap: 10px;
+    padding: 0.5vw;
+    margin-top: 5vh;
+}
+
+@media only screen and (min-width: 800px) {
+    .galeriaConteiner {
+        display: grid;
+        grid-template-areas:
+        'foto1 foto1 foto2 '
+        'foto3 foto4 foto2 '
+        'foto5 foto6 foto6 ';
+        grid-template-columns: repeat(3, auto);
+        align-content: stretch;
+        gap: 10px;
+        padding: 0.5vw;
+    }
+}
+
+.galeriaConteiner div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 10px;
+    
+}
+.galeriaItem:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+} 
+
+.foto1 {
+    grid-area: foto1;
+    } 
+
+
+.foto2 {
+    grid-area: foto2;
+}
+
+.foto3 {
+    grid-area: foto3;
+}
+
+.foto4 {
+    grid-area: foto4;
+}
+
+.foto5 {
+    grid-area: foto5;
+}
+
+.foto6 {
+    grid-area: foto6;
+}
+
+.galeriaConteiner>div {
+    background-color:#8D6E51;
+}
+/*----TOUR-----*/
+.tourEncabezado {
+    color: #e8d8d5;
+    width: 100%;
+    height: 80vh;
+    font-size: 40px;
+    background-image: url("../img/BillieTour.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.textoTour{
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    font-size: 40px;
+    color: #e8d8d5;
+    text-decoration: none;
+    }
+.boton {
+    font-size: 30px;
+    text-decoration: none;
+    color: #e8d8d5;
+    border-style: solid;
+    border-radius: 10px;
+
+}
+
+/*---SUBSCRIBE---*/
+.contenedorContacto {
+    font-size: 30px;
+    color: #e8d8d5;
+}
+.infoContacto{
+    width: 1100px;
+    height: 550px;
+    background: #e8d8d5;
+    color: #8D6E51;
+    padding: 70px;
+    margin: auto;
+    margin-top: 10px;
+    }
+.infoContacto h4 {
+    text-align: center;
+    font-size: 50px;
+}
+.colorConsulta {
+    color: #e8d8d5;
+}
+.control {
+    width: 50%;
+    background: #e8d8d5;
+    padding: 5px;
+    color: #8D6E51;
+    border: 1px solid #8D6E51;
+    font-size: 15px;
+}
+/*---MUSICA---*/
+.nuevoAlbum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e8d8d5;
+    padding: 20px;
+    height: 100vh;
+}
+.nuevoAlbum img {
+    height: 70vh;
+    width: 40vw;
+}
+.escucharDisco a {
+    text-decoration: none;
+    color: #e8d8d5;
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    color: #e8d8d5;
+}
+
+/*----FOOTER-----*/
+footer {
+    background-color: #8D6E51;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+    text-align: center;
+}
+.redesSociales img a {
+    text-decoration: none;
+}
+.redesSociales img {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
