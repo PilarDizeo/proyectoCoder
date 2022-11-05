@@ -50,7 +50,7 @@ header nav ul li {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background: url(../img/BillieHome.webp);
+    background: url(./img/BillieHome.webp);
     background-size: cover;
     background-position: center;
 }
@@ -140,7 +140,7 @@ header nav ul li {
 .tourEncabezado {
     color: #e8d8d5;
     font-size: 40px;
-    background-image: url("../img/BillieTour.jpg");
+    background-image: url("./img/BillieTour.jpg");
     background-size: 100vw 100vh;
     background-attachment: fixed;
     margin: 0;
@@ -247,4 +247,4 @@ footer {
     font-weight: 500;
     margin-bottom: 20px;
     text-align: center;
-}
+} 
